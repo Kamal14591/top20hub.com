@@ -140,12 +140,13 @@
             position: relative;
         }
         .flip .card.flipped {
+           -moz-backface-visibility: hidden ;
           -webkit-transform: rotatey(-180deg);
             transform: rotatey(-180deg);
         }
         .flip .card {
-
-          height: 100%;
+           -moz-backface-visibility: hidden ;
+            height: 100%;
           -webkit-transform-style: preserve-3d;
           -webkit-transition: 0.5s;
             transform-style: preserve-3d;
