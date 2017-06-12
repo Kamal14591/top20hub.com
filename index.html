@@ -199,7 +199,7 @@
                       <!-- <h1 class="text-center"><a href="#myModal" role="button" class="btn btn-primary btn-lg" data-toggle="modal">Contact Us</a></h1> -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="content/aboutus.html">About us</a>
+                        <a class="nav-link" data-toggle="modal" href="#aboutusModal">About us</a>
                     </li>
                 </ul>
                 <ul>
@@ -453,6 +453,33 @@
    </div>
   <!-- Login model End here -->
 
+    
+   <!-- Articles submission modal start here -->
+  <div id="articlesModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h3 id="myModalLabel">Choose the topics on your interest</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      </div>
+
+      <div class="modal-body">
+
+      <div w3-include-html="../content/topics.html"></div>
+
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary btn-block waves-effect waves-light" style="font-size:10px;" data-dismiss="modal" aria-hidden="true">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Articles submission modal end here -->
+
+     
+    
+    
   <!-- Contact us modal start here -->
   <div id="contactUsModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -479,31 +506,26 @@
   <!-- Conact us modal end here -->
 
     
-      <!-- Articles submission modal start here -->
-  <div id="articlesModal" class="modal fade" role="dialog">
+    <!--    aboutusModal start here  -->
+    <div id="aboutusModal" class="modal fade" role="dialog">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
 
       <div class="modal-header">
-        <h3 id="myModalLabel">Choose the topics on your interest</h3>
+<!--        <h3 id="myModalLabel">Choose the topics on your interest</h3>-->
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
       </div>
-
+        
       <div class="modal-body">
 
-      <div w3-include-html="../content/topics.html"></div>
+      <div w3-include-html="../content/aboutus.html"></div>
 
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary btn-block waves-effect waves-light" style="font-size:10px;" data-dismiss="modal" aria-hidden="true">Cancel</button>
       </div>
     </div>
   </div>
 </div>
-  <!-- Articles submission modal end here -->
-
-    
-    
+  <!-- aboutusModal end here -->
+        
     
     <!--Footer-->
     <footer class="page-footer center-on-small-only">
