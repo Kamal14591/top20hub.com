@@ -20,6 +20,8 @@
 
     <link href="css/style.css" rel="stylesheet">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.7.3/summernote.min.css" rel="stylesheet" />
+
     <!-- Template styles -->
     <style rel="stylesheet">
         /* TEMPLATE STYLES */
@@ -172,6 +174,7 @@
             transform: rotatey(-180deg);
         }
           .inner{margin:0px !important;}
+          /*@import url('//cdnjs.cloudflare.com/ajax/libs/summernote/0.5.1/summernote.css');*/
     </style>
 
 </head>
@@ -194,7 +197,7 @@
                         <a class="nav-link">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="modal" href="#articlesModal">Articles Submission</a>
+                        <a class="nav-link" data-toggle="modal" href="#articlesInterestModal">Articles Submission</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="modal" href="#contactUsModal">Contact us</a>
@@ -456,8 +459,8 @@
   <!-- Login model End here -->
 
 
-   <!-- Articles submission modal start here -->
-  <div id="articlesModal" class="modal fade" role="dialog">
+   <!-- Articles Intrest submission modal start here -->
+  <div id="articlesInterestModal" class="modal fade" role="dialog">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
 
@@ -472,12 +475,53 @@
 
       </div>
       <div class="modal-footer">
-        <button class="btn btn-primary btn-block waves-effect waves-light" style="font-size:10px;" data-dismiss="modal" aria-hidden="true">Cancel</button>
+        <button class="btn btn-primary  waves-effect waves-light" style="font-size:10px;" data-toggle="modal" data-dismiss="modal" data-target="#articlesSubmissionModal">Next</button>
+        <button class="btn btn-danger  waves-effect waves-light" style="font-size:10px;" data-dismiss="modal" aria-hidden="true">Cancel</button>
       </div>
     </div>
   </div>
 </div>
-  <!-- Articles submission modal end here -->
+  <!-- Articles Interest submission modal end here -->
+
+  <!-- Articles submission modal start here -->
+ <div id="articlesSubmissionModal" class="modal fade" role="dialog">
+ <div class="modal-dialog modal-lg">
+   <div class="modal-content">
+
+     <div class="modal-header">
+       <h3 id="myModalLabel">Please Enter your article here..</h3>
+       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+     </div>
+
+     <div class="modal-body">
+       <form class="form-horizontal" action="">
+         <div class="form-group">
+           <label class="control-label col-sm-2" for="email">Title:</label>
+           <div class="col-sm-10">
+       <input type="email" class="form-control" id="email" placeholder="Enter Title" name="email">
+     </div>
+   </div>
+   <div class="form-group">
+     <label class="control-label col-sm-2" for="pwd">Rating:</label>
+     <div class="col-sm-10">
+       <input type="dropdown" class="form-control" id="pwd" placeholder="Rate your Article" name="rate">
+     </div>
+   </div>
+   <div class="form-group">
+     <label class="control-label col-sm-2" for="pwd">Description :</label>  
+     <div id="summernote"></div>
+   </div>
+ </form>
+     </div>
+     <div class="modal-footer">
+       <button class="btn btn-primary  waves-effect waves-light" style="font-size:10px;" data-toggle="modal" data-dismiss="modal">Submit</button>
+       <button class="btn btn-danger  waves-effect waves-light" style="font-size:10px;" data-dismiss="modal" aria-hidden="true">Cancel</button>
+     </div>
+
+   </div>
+ </div>
+</div>
+ <!-- Articles Interest submission modal end here -->
 
 
 
@@ -623,6 +667,8 @@
 
     <script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.7.3/summernote.min.js"></script>
+
     <script>
     new WOW().init();
 
@@ -632,10 +678,10 @@
 
       w3.includeHTML();
 
+        $('#summernote').summernote();
+
     </script>
 
 </body>
 
 </html>
-
-
