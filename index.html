@@ -19,9 +19,11 @@
     <link href="css/mdb.min.css" rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet">
-    
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.7.3/summernote.min.css" rel="stylesheet" /> 
 
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.7.3/summernote.min.css" rel="stylesheet" /> -->
+
+     <link href="css/summernote.min.css" rel="stylesheet">
+     
 
     <!-- Template styles -->
     <style rel="stylesheet">
@@ -207,7 +209,7 @@
                         <a class="nav-link">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="modal" href="#articlesModal">Articles Submission</a>
+                        <a class="nav-link" data-toggle="modal" href="#articlesInterestModal">Articles Submission</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="modal" href="#contactUsModal">Contact us</a>
@@ -469,8 +471,8 @@
   <!-- Login model End here -->
 
 
-   <!-- Articles submission modal start here -->
-  <div id="articlesModal" class="modal fade" role="dialog">
+   <!-- Articles Intrest submission modal start here -->
+  <div id="articlesInterestModal" class="modal fade" role="dialog">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
 
@@ -483,21 +485,35 @@
 
   <div class="first-content">
   <div w3-include-html="../content/topics.html"></div>
+  <br />
   <button class="btn btn-primary waves-effect waves-light first-button pull-right" style="font-size:10px;" aria-hidden="true">Next</button>
   </div>
 
   <div class="second-content" style="display:none">
-  <div w3-include-html="../content/topics.html"></div>
-  <button class="btn btn-danger waves-effect waves-light pull-right" style="font-size:10px;" data-dismiss="modal" aria-hidden="true">Cancel</button>
-  <button class="btn btn-primary waves-effect waves-light second-button pull-right" style="font-size:10px;" aria-hidden="true">Previous</button>
+    <!-- <div w3-include-html="../content/articleSubmission.html"></div> -->
+    <form class="form-horizontal" action="">
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Title:</label>
+        <div class="col-sm-10">
+    <input type="email" class="form-control" id="email" placeholder="Enter Title" name="email">
+    </div>
+    </div>
+    <div class="form-group">
+    <label class="control-label col-sm-2" for="pwd">Description :</label>
+    <div class="summernote" id="summernote"></div>
+    </div>
+    </form>
+    <br />
+      <button class="btn btn-primary  waves-effect waves-light pull-right" style="font-size:10px;" data-toggle="modal" data-dismiss="modal">Submit</button>
+    <button class="btn btn-primary waves-effect waves-light second-button pull-right" style="font-size:10px;" aria-hidden="true">Previous</button>
   </div>
 
   </div>
-     
+
     </div>
   </div>
 </div>
-  <!-- Articles submission modal end here -->
+  <!-- Articles Intrest submission modal start here -->
 
 
 
@@ -643,16 +659,31 @@
 
     <script type="text/javascript" src="js/w3.js"></script>
 
+    <script type="text/javascript" src="js/summernote.js"></script>
+
+
     <script>
     new WOW().init();
+    $(document).ready(function() {
+           $('.summernote').summernote();
+     });
+
+     $('.summernote').summernote({
+     height: 150,   //set editable area's height
+     codemirror: { // codemirror options
+       theme: 'monokai'
+     }
+   });
+
+    //$('#summernote').summernote();
 
     $('.fliper-btn').click(function(){
          $('.flip').find('.card').toggleClass('flipped');
     });
 
       w3.includeHTML();
-        
-        
+
+
         $(function () {
   $('.first-button').on('click', function () {
   $('.first-content').animate({height:"toggle"}, function(){
@@ -671,12 +702,13 @@
    });
    });
   });
-  
+
 
     </script>
 
 </body>
 
 </html>
+>
 
 
