@@ -21,9 +21,10 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.7.3/summernote.min.css" rel="stylesheet" /> -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.7.0/summernote.css" rel="stylesheet">
+     <!-- <link href="css/summernote.min.css" rel="stylesheet"> -->
+     <!-- <link rel="stylesheet" type="text/css" href="<?= asset('../css/summernote.min.css') ?>"> -->
 
-     <link href="css/summernote.min.css" rel="stylesheet">
-     
 
     <!-- Template styles -->
     <style rel="stylesheet">
@@ -659,21 +660,19 @@
 
     <script type="text/javascript" src="js/w3.js"></script>
 
-    <script type="text/javascript" src="js/summernote.js"></script>
+    <!-- <script type="text/javascript" src="js/summernote.js"></script> -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.7.0/summernote.js"></script>
 
 
     <script>
     new WOW().init();
-    $(document).ready(function() {
-           $('.summernote').summernote();
-     });
 
-     $('.summernote').summernote({
-     height: 150,   //set editable area's height
-     codemirror: { // codemirror options
-       theme: 'monokai'
-     }
-   });
+
+  //
+
+  $(document).ready(function() {
+        $('#summernote').summernote({height: 170});
+    });
 
     //$('#summernote').summernote();
 
@@ -709,6 +708,6 @@
 </body>
 
 </html>
->
+
 
 
