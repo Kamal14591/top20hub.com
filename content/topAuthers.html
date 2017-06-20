@@ -44,23 +44,30 @@
       background-color: #304a74;
   }
 
-  /*.top-nav-collapse {
-      background-color: #304a74;
-  }*/
-
-
   .scrolling-navbar {
       -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
       -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
       transition: background .5s ease-in-out, padding .5s ease-in-out;
   }
+  .section.team-section .avatar {
+    margin-bottom: 2rem;
+    height: auto;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+}
 
 </style>
 <head>
 
   <body>
 
- <div class="container">
+ <div class="container-fluid">
 
    <!--Navbar-->
    <nav class="navbar navbar-toggleable-md navbar-dark fixed-top scrolling-navbar">
@@ -82,104 +89,175 @@
    </nav>
    <!--/.Navbar-->
 
-    <!--Author box-->
-  <div class="author-box hoverable">
-      <!--Name-->
-      <br />
-      <br />
-      <br />
+   <!--Section: Testimonials v.3-->
+<section class="section team-section">
 
-      <h1 class="h3-responsive text-center">
-        Best Authers of the Week
-      </h1>
-      <br />
-      <div class="divider-new">
-        <h3 class="h3-responsive">Top : 1</h3>
-      </div>
-      <div class="row">
-          <!--Avatar-->
-          <div class="col-12 col-sm-2">
-              <img src="../img/team/kamal.jpg" class="img-fluid rounded-circle z-depth-2">
-          </div>
-          <!--Author Data-->
-          <div class=" col-12 col-sm-10">
-            <div class="row">
-              <div class="col-12 col-sm-4">
-                <h3> <small>Kamal Kishor Nayak</small></h3>
-                <div class="personal-sm">
-                  <p class="indent">
-                    <a target="_blank" href="https://www.facebook.com/kamal.kknayak"><i class="fa fa-facebook-square" style="font-size:36px;color:#304a74"></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/kamal-kishor-nayak-38970484"><i class="fa fa-linkedin-square" style="font-size:36px;color:#304a74"></i></a>
-                    <a target="_blank" href="https://plus.google.com/u/0/110159325553999871007"><i class="fa fa-google-plus-square" style="font-size:36px;color:#304a74"></i></a>
-                  </p>
-                </div>
-              </div>
-              <div class="col-12 col-sm-4">
+<!--Section heading-->
+<br /><br /><br />
+<h1 class="section-heading text-center">Top 3 Auther's of the Month</h1>
+
+<!--First row-->
+<div class="row text-center">
+
+   <!--First column-->
+   <div class="col-md-4 mb-r">
+
+       <div class="testimonial">
+
+          <h2 class="title text-muted">#1</h2>
+           <!--Avatar-->
+           <div class="avatar">
+               <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle img-fluid">
+           </div>
+
+           <!--Content-->
+           <h4>Anna Deynah</h4>
+           <h5>Web Designer</h5>
+           <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab.</p>
+
+           <!--Review-->
+
+
+           <!-- Social -->
+           <div class="personal-sm">
+             <p class="indent">
+             <a target="_blank" href="https://www.facebook.com/kamal.kknayak"><i class="fa fa-facebook-square" style="font-size:36px;color:#304a74"></i></a> &nbsp;
+             <a target="_blank" href="https://www.linkedin.com/in/kamal-kishor-nayak-38970484"><i class="fa fa-linkedin-square" style="font-size:36px;color:#304a74"></i></a>&nbsp;
+             <a target="_blank" href="https://plus.google.com/u/0/110159325553999871007"><i class="fa fa-google-plus-square" style="font-size:36px;color:#304a74"></i></a>
+           </p>
+           </div>
+
+           <div class="row">
+             <div class="col-12 col-sm-6">
               <h3><small>No of article's</small></h3>
               <h3><small>100</small></h3>
               </div>
-              <div class="col-12 col-sm-4">
+              <div class="col-12 col-sm-6">
                 <h3><small>User Rating </small></h3>
                 <ul class="rating">
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                  <div class="orange-text">
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star-half-full"> </i>
+                  </div>
                 </ul>
               </div>
-              <br />
+           </div>
 
-            </div>
+       </div>
+   </div>
+   <!--/First column-->
 
-            <div class="row">
-              <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
-              <p class="hidden-md-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint esse nulla quia quam veniam commodi dicta, iusto inventore. Voluptatum pariatur eveniet ea, officiis vitae praesentium beatae quas libero, esse facere.
-              </p>
-            </div>
-          </div>
-      </div>
-      <div class="divider-new">
-        <h3 class="h3-responsive">Top : 2</h3>
-      </div>
-      <div class="row">
-          <!--Avatar-->
-          <div class="col-12 col-sm-2">
-              <img src="../img/team/jai.jpg" class="img-fluid rounded-circle z-depth-2">
-          </div>
-          <!--Author Data-->
-          <div class=" col-12 col-sm-10">
-            <div class="row">
-              <div class="col-12 col-sm-4">
-                <h3> <small>Jai Singh</small></h3>
-                <div class="personal-sm">
-                  <p class="indent">
-                    <a target="_blank" href="https://www.facebook.com/jaisingh339"><i class="fa fa-facebook-square" style="font-size:36px;color:#304a74"></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/jai-singh-302109109/"><i class="fa fa-linkedin-square" style="font-size:36px;color:#304a74"></i></a>
-                    <a target="_blank" href="https://plus.google.com/u/0/+jaisingh39"><i class="fa fa-google-plus-square" style="font-size:36px;color:#304a74"></i></a>
-                  </p>
-                </div>
+   <!--Second column-->
+   <div class="col-md-4 mb-r">
+
+       <div class="testimonial">
+
+          <h2 class="title text-muted">#2</h2>
+           <!--Avatar-->
+           <div class="avatar">
+               <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(2).jpg" class="rounded-circle img-fluid">
+           </div>
+
+           <!--Content-->
+           <h4>Maria Kate</h4>
+           <h5>Web Designer</h5>
+           <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab.</p>
+
+           <!--Review-->
+
+
+           <!-- Social -->
+           <div class="personal-sm">
+             <p class="indent">
+             <a target="_blank" href="https://www.facebook.com/kamal.kknayak"><i class="fa fa-facebook-square" style="font-size:36px;color:#304a74"></i></a> &nbsp;
+             <a target="_blank" href="https://www.linkedin.com/in/kamal-kishor-nayak-38970484"><i class="fa fa-linkedin-square" style="font-size:36px;color:#304a74"></i></a>&nbsp;
+             <a target="_blank" href="https://plus.google.com/u/0/110159325553999871007"><i class="fa fa-google-plus-square" style="font-size:36px;color:#304a74"></i></a>
+           </p>
+           </div>
+
+           <div class="row">
+             <div class="col-12 col-sm-6">
+              <h3><small>No of article's</small></h3>
+              <h3><small>99</small></h3>
               </div>
-              <div class="col-12 col-sm-4">
+              <div class="col-12 col-sm-6">
+                <h3><small>User Rating </small></h3>
+                <ul class="rating">
+                  <div class="orange-text">
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star-o"> </i>
+                  </div>
+                </ul>
+              </div>
+           </div>
+
+       </div>
+   </div>
+   <!--/Second column-->
+
+   <!--Third column-->
+   <div class="col-md-4 mb-r">
+
+       <div class="testimonial">
+
+          <h2 class="title text-muted">#3</h2>
+           <!--Avatar-->
+           <div class="avatar">
+               <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle img-fluid">
+           </div>
+
+           <!--Content-->
+           <h4>John Deo</h4>
+           <h5>Web Designer</h5>
+           <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab.</p>
+
+           <!--Review-->
+
+
+           <!-- Social -->
+           <div class="personal-sm">
+             <p class="indent">
+             <a target="_blank" href="https://www.facebook.com/kamal.kknayak"><i class="fa fa-facebook-square" style="font-size:36px;color:#304a74"></i></a> &nbsp;
+             <a target="_blank" href="https://www.linkedin.com/in/kamal-kishor-nayak-38970484"><i class="fa fa-linkedin-square" style="font-size:36px;color:#304a74"></i></a>&nbsp;
+             <a target="_blank" href="https://plus.google.com/u/0/110159325553999871007"><i class="fa fa-google-plus-square" style="font-size:36px;color:#304a74"></i></a>
+           </p>
+           </div>
+
+           <div class="row">
+             <div class="col-12 col-sm-6">
               <h3><small>No of article's</small></h3>
               <h3><small>98</small></h3>
               </div>
-              <div class="col-12 col-sm-4">
+              <div class="col-12 col-sm-6">
                 <h3><small>User Rating </small></h3>
                 <ul class="rating">
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>
+                  <div class="orange-text">
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star"> </i>
+                      <i class="fa fa-star-half-full"> </i>
+                      <i class="fa fa-star-o"> </i>
+                  </div>
                 </ul>
               </div>
-              <br />
+           </div>
 
-            </div>
+       </div>
+   </div>
+   <!--/Third column-->
 
-            <div class="row">
-              <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
-              <p class="hidden-md-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint esse nulla quia quam veniam commodi dicta, iusto inventore. Voluptatum pariatur eveniet ea, officiis vitae praesentium beatae quas libero, esse facere.
-              </p>
-            </div>
-          </div>
-      </div>
-  </div>
-  <!--/.Author box-->
 </div>
+<!--/First row-->
+
+</section>
+<!--/Section: Testimonials v.3-->
+
 
 
 
